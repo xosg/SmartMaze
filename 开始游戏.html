@@ -11,19 +11,17 @@
 <body>
 
 
-<div id="origin" style="position: absolute;width: 12px;height: 12px;z-index: 2;background-color: red;"></div>
-<div id="destination"
-     style="position: absolute;width: 12px;height: 12px;z-index: 1;background-color:lime;top: 746px;left: 746px;"></div>
+<div id="origin" ></div>
+<div id="destination"></div>
 
-<div id='pen' style='position:absolute;width:3px;height:3px;background-color:black;'></div>
+<div id='pen'></div>
 
-<canvas id="canvas" style="background-color: #eee;" width="753" height="753"></canvas>
-
-
-<div style="float: right;" id="controller">
+<canvas id="canvas" width="753" height="753"></canvas>
 
 
-    键盘控制：
+<div id="controller">
+
+    焦点：
     <button onClick="alert('方向键移动，玩家可以随时切换走起点或终点来完成迷宫，笔尖只在制图画墙的时候才能移动。温馨提示：由算法决定，高级模式下从终点开始走可以大大降低游戏难度，当然得到的分数也会相应减少。')">
         ?
     </button>

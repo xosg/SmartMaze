@@ -1,0 +1,32 @@
+#origin {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    z-index: 2;
+    background-color: red;
+}
+
+#destination {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    z-index: 1;
+    background-color: lime;
+    top: 746px;
+    left: 746px;
+}
+
+#pen {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: black;
+}
+
+#canvas{
+    background: #eee;
+}
+
+#controller{
+    float: right;
+}

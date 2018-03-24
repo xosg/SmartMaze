@@ -1,6 +1,8 @@
 
 // alert("版本14.0预告：更新以下内容。\n1.设计得分系统\n2.加入\"冲刺\"技能\n3.修复数字小数格式补丁\n4.笔尖瞬移技能\n5.本地存储功能");
 
+let wallX=[[]];
+let wallY=[[]];
 
 var wall=new Array();
 var shortest_path=new Array();
@@ -17,27 +19,26 @@ var already_path=new Array();
 
 var state="draw";
 var get;
-var language='chinese';
 
-
-
+let origin;
+let destination;
 let pen;
 
-
+let canvas;
 
 window.onload=function(){
 
+    canvas=document.getElementById("canvas");
+    origin=document.getElementById('origin');
+    destination=document.getElementById("destination");
     var wall_color=document.getElementById("wall_color");
     var path_color=document.getElementById("path_color");
-    var origin=document.getElementById("origin");
-    var destination=document.getElementById("destination");
     var pen_x=document.getElementById("pen_x");
     var pen_y=document.getElementById("pen_y");
     var ori_x=document.getElementById("ori_x");
     var ori_y=document.getElementById("ori_y");
     var des_x=document.getElementById("des_x");
     var des_y=document.getElementById("des_y");
-    var canvas=document.getElementById("canvas");
 
     pen=document.getElementById('pen');
 
@@ -244,7 +245,15 @@ window.onload=function(){
 
 
 
+function draw_all_walls() {
+    let ctx=canvas.getContext("2d");
+    ctx.fillStyle=wall_color.value;
+    for (let i=0;i<amount_x;i++){
+        for(let j=0;j<amount_y+1;j++){
 
+        }
+    }
+}
 
 
 
