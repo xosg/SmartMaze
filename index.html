@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>智能迷宫更新版</title>
+    <title>SmartMaze@13.9</title>
 
     <link type="text/css" rel="stylesheet" href="style.css">
 
@@ -11,7 +11,7 @@
 <body>
 
 
-<div id="origin" ></div>
+<div id="origin"></div>
 <div id="destination"></div>
 
 <div id='pen'></div>
@@ -34,7 +34,7 @@
         ?
     </button>
     <br>
-    背景：<input type="text" id="canvas_color" value="#eee"><br>
+    背景：<input type="text" id="canvas_color" value="#eee" onchange="change(this)"><br>
     起点：<input type="text" id="origin_color" value="red"><br>
     终点：<input type="text" id="destination_color" value="lime"><br>
     墙体：<input type="text" id="wall_color" value="black"><br>
